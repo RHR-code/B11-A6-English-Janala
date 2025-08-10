@@ -2,7 +2,6 @@
 /* poppins */
 .poppins_font {
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
   font-style: normal;
 }
 /* inter  */
@@ -10,13 +9,11 @@
 .inter_font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
   font-style: normal;
 }
 
 /* hind siliguri */
 .hind_siliguri_font {
   font-family: "Hind Siliguri", sans-serif;
-  font-weight: 400;
   font-style: normal;
 }
