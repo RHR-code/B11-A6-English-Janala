@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +15,7 @@
   <body class="poppins_font">
     <header class="h-[96px]">
       <nav
-        class="fixed w-full z-50 flex flex-col h-[96px] bg-gray-200 max-w-[1440px] mx-auto px-10 gap-3 md:gap-0 md:flex-row items-center md:justify-between"
+        class="fixed w-full z-40 flex flex-col h-[96px] bg-gray-300/50 backdrop-blur-xs max-w-[1440px] mx-auto px-10 gap-3 md:gap-0 md:flex-row items-center md:justify-between"
       >
         <div class="flex items-center gap-1.5">
           <span class="font-semibold text-xl">English</span>
@@ -29,7 +29,7 @@
             <span>
               <img src="../assets/faq.png" alt="" />
             </span>
-            <span>FAQ</span>
+            <span><a href="#FAQ">FAQ</a></span>
           </button>
           <button
             class="flex items-center gap-1 border border-[rgba(66,42,213,1)] py-1 px-3 rounded-2xl"
@@ -37,7 +37,7 @@
             <span>
               <img src="../assets/learn.png" alt="" />
             </span>
-            <span>Learn</span>
+            <span><a href="#learn">Learn</a></span>
           </button>
           <button
             class="flex items-center gap-1 border border-[rgba(66,42,213,1)] py-1 px-3 rounded-2xl"
@@ -45,7 +45,7 @@
             <span>
               <img src="../assets/logout.png" alt="" />
             </span>
-            <span>Logout</span>
+            <span id="logout">Logout</span>
           </button>
         </div>
       </nav>
@@ -53,7 +53,7 @@
     <main>
       <!-- banner section -->
       <section
-        class="flex flex-col-reverse md:flex-row max-w-[1440px] mx-auto px-10 mt-5"
+        class="banner hidden flex flex-col-reverse md:flex-row max-w-[1440px] mx-auto px-10 mt-5"
       >
         <div class="flex flex-col justify-center flex-1/2">
           <h2 class="font-bold text-2xl md:text-5xl">
@@ -75,7 +75,7 @@
               id="loginName"
             />
             <input
-              class="w-[320px] h-[40px] px-3 py-5 border rounded-sm border border-gray-500"
+              class="w-[320px] h-[40px] px-3 py-5 rounded-sm border border-gray-500"
               placeholder="Enter Your Password(123456)"
               type="password"
               name=""
@@ -85,6 +85,7 @@
               class="font-semibold text-sm py-[10px] px-4 bg-[#422AD5] text-white rounded-sm"
               type="submit"
               value="Get Started"
+              id="loginBtn"
             />
           </form>
         </div>
@@ -95,7 +96,10 @@
         </div>
       </section>
       <!-- Learn section -->
-      <section class="max-w-[1440px] mx-auto md:px-10 px-5 mt-[200px]">
+      <section
+        id="learn"
+        class="learn max-w-[1440px] mx-auto md:px-10 px-5 mt-[200px]"
+      >
         <h2 class="font-bold text-2xl md:text-4xl text-center">
           <span class="text-[#00BCFF]">Let's</span> Learn Vocabularies
         </h2>
@@ -117,12 +121,15 @@
         </div>
       </section>
       <!-- FAQ section -->
-      <section class="max-w-[1440px] mx-auto md:px-10 px-5 mt-[200px]">
+      <section
+        id="FAQ"
+        class="FAQ max-w-[1440px] mx-auto md:px-10 px-5 mt-[200px]"
+      >
         <h2 class="font-bold text-2xl md:text-4xl text-center mb-[80px]">
           <span class="text-[#00BCFF]">Frequently</span> Asked Questions
         </h2>
         <!-- lists -->
-        <div>
+        <div class="list">
           <div class="relative bg-gray-400/30 py-5 px-5 rounded-xl mb-5">
             <img class="absolute right-5 w-3" src="../assets/+.png" alt="" />
             <h6 class="font-medium">
@@ -139,7 +146,7 @@
             <h6 class="font-medium">
               1. How can I start learning English on this website?
             </h6>
-            <p class="font-normal text-black/50 pt-3">
+            <p class="hidden font-normal text-black/50 pt-3">
               You can start by exploring our beginner lessons, interactive
               exercises, and quizzes. We also offer structured courses to guide
               you step by step.
@@ -150,7 +157,7 @@
             <h6 class="font-medium">
               1. How can I start learning English on this website?
             </h6>
-            <p class="font-normal text-black/50 pt-3">
+            <p class="hidden font-normal text-black/50 pt-3">
               You can start by exploring our beginner lessons, interactive
               exercises, and quizzes. We also offer structured courses to guide
               you step by step.
@@ -161,7 +168,7 @@
             <h6 class="font-medium">
               1. How can I start learning English on this website?
             </h6>
-            <p class="font-normal text-black/50 pt-3">
+            <p class="hidden font-normal text-black/50 pt-3">
               You can start by exploring our beginner lessons, interactive
               exercises, and quizzes. We also offer structured courses to guide
               you step by step.
@@ -170,7 +177,8 @@
         </div>
       </section>
     </main>
-
+    <!-- modal -->
+    <section class="modal hidden"></section>
     <footer
       class="max-w-[1440px] mx-auto flex flex-col md:flex-row md:justify-between justify-center h-[325px] items-center px-10 mt-[200px] bg-gray-400/30"
     >
@@ -195,6 +203,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

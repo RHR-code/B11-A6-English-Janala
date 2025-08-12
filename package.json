@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@tailwindcss/cli": "^4.1.11",
+    "sweetalert2": "^11.22.3",
     "tailwindcss": "^4.1.11"
   }
 }

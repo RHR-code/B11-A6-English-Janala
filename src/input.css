@@ -17,3 +17,12 @@
   font-family: "Hind Siliguri", sans-serif;
   font-style: normal;
 }
+/* btn */
+.button {
+  background: rgba(66, 42, 213, 1);
+  color: white;
+}
+.noButton {
+  background: transparent;
+  color: black;
+}
