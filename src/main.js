@@ -57,7 +57,7 @@ async function getWordById(btn) {
       cards.innerHTML = `
         <div class="absolute inset-0 top-6 flex flex-col items-center">
             <img src="../assets/alert-error.png" alt="" />
-            <p class="mt-4 mb-4">এই Lesson এ এখনো কোন Vocabulary যুক্ত করা হয়নি।</p>
+            <p class="mt-4 mb-4 text-center">এই Lesson এ এখনো কোন Vocabulary যুক্ত করা হয়নি।</p>
             <h2>নেক্সট Lesson এ যান</h2>
           </div>
         `;
