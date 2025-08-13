@@ -64,7 +64,7 @@ async function getWordById(btn) {
     }
     for (let word of allWord) {
       cards.innerHTML += `
-    <div id=${word.id} class="card p-[56px] text-center bg-white rounded-2xl">
+    <div id=${word.id} class="card p-9 md:p-[56px] text-center bg-white rounded-2xl">
             <div class="flex flex-col items-center">
               <h2 class="inter_font font-bold text-3xl">${word.word}</h2>
               <p class="inter_font font-bold text-xl mt-6 mb-8">
